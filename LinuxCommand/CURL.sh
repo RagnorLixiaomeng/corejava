@@ -1,0 +1,3 @@
+curl -o /dev/unll -s -w  "\n"HTTP返回码：%{http_code}"\n"对端IP地址：%{remote_ip}"\n"应用建连时间：%{time_appconnect}"\n"TCP连接时间：%{time_connect}"\n"DNS解 析时间：%{time_namelookup}"\n"准备传输时间：%{time_pretransfer}"\n"开始传输时间：%{time_starttransfer}"\n""\n"总时间：%{time_total}"\n"  -H "Accept: application/json" -H "Cookie: JSESSIONID=922B1316BAF8A31E7EED9ACF4AB4AE19" http://jira.chinac.com/rest/api/2/issue/ARCS-1521
+
+curl -H "Accept: application/json" -H "Cookie: JSESSIONID=922B1316BAF8A31E7EED9ACF4AB4AE19" http://jira.chinac.com/rest/api/2/issue/ARCS-15211 | jq .
