@@ -128,5 +128,8 @@ public class FocusPoint_03_JavaDataType {
     public static void Datatypeboolean(){
         // Tips-1: 布尔类型在python中属于数字类型（0，1）print(True + True) 是 2；
         // Tips-2: boolean在java中有两个值false 与 true，不能与整型之间互相转换
+
+        boolean flag = true;
+
     }
 }
