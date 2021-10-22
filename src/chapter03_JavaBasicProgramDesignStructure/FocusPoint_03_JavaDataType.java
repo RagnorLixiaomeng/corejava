@@ -38,7 +38,7 @@ public class FocusPoint_03_JavaDataType {
         Datatypeboolean();
 
     }
-
+    // FocusSubPoint-001
     public static void DataCategoryInteger(){
         /* 1
          * Datatype-Category: Integer
@@ -79,6 +79,7 @@ public class FocusPoint_03_JavaDataType {
 
     }
 
+    // FocusSubPoint-002
     public static void DatatypeFloat(){
         //  Tips-1: Float 和 Double 主要是为了科学计算和工程计算而设计的，它们执行的是二进制浮点计算，所以计算结果并不是完全精确的
         //  Tips-2: Float 定义的时候需要加尾缀 F， 不加默认是D/d
@@ -108,11 +109,14 @@ public class FocusPoint_03_JavaDataType {
 
     }
 
+    //  FocusSubPoint-003
+    //  FocusSubPoint-004
     public static void Datatypechar(){
         // Tips-1: Unicode编码看名字就知道了是为了统一当时编码界的混乱：ASCII(美)、KOI-8(俄)、GB 18030/BIG-5(中)
         // Tips-2: java中，char类型描述了UTF-16编码中的一个代码单元
         // Tips-3: 在设计java的时候，采用了16位的unicode字符集
         // Tips-4: 强烈建议不要使用char类型，除非确实需要处理UTF-16代码单元，最好将字符串作为抽象数据类型处理
+        // Tips-5: char类型的字面量值要用单引号括起来。'A' stand 65对应的字符常量 BUT "A"是包含一个字符为A的字符串
 
         /*
         * Datatype-Category: char
@@ -125,6 +129,7 @@ public class FocusPoint_03_JavaDataType {
         char utf_16_a = 'a';
     }
 
+    // FocusSubPoint-005
     public static void Datatypeboolean(){
         // Tips-1: 布尔类型在python中属于数字类型（0，1）print(True + True) 是 2；
         // Tips-2: boolean在java中有两个值false 与 true，不能与整型之间互相转换
