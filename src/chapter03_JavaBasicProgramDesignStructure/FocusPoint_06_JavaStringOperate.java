@@ -14,6 +14,7 @@ public class FocusPoint_06_JavaStringOperate {
         EmptyStringAndNullString();
         CodePointAndCodeUnits();
         StringApi();
+        BuildString();
     }
 
     // FocusSubPoint-001: substring

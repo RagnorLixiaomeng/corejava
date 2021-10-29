@@ -13,8 +13,8 @@ public class FocusPoint_07_JavaInputOutput {
 
     public static void main(String[] args) throws IOException {
         // Topic-01: 掌握从控制台交互 读取输入 并输出的方式
-//        ReadInput();
-//        FormatOutput();
+        ReadInput();
+        FormatOutput();
         FileInputAndOutPut();
     }
 
