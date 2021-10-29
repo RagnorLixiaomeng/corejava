@@ -8,11 +8,11 @@ public class FocusPoint_08_JavaControlFlow {
     public static void main(String[] args) {
         // Topic-01: 程序三大结构 顺序、分支、循环
         // Topic-02: 分支中最重要的是条件语句； 循环中最终要的是循环语句；最后还有switch语句
-//        BlockScope();
-//        ConditionalStatement();
-//        CycleStructure();
-//        DetermineCycle();
-//        MultipleChoiceSwitch();
+        BlockScope();
+        ConditionalStatement();
+        CycleStructure();
+        DetermineCycle();
+        MultipleChoiceSwitch();
         InterruptControlProcessStatement();
 
     }
