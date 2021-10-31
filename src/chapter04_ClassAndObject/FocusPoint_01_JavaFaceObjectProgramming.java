@@ -9,6 +9,9 @@ public class FocusPoint_01_JavaFaceObjectProgramming {
         // Topic-03: 如果处理规模较小的问题用面向过程比较简单，而处理大规模的问题面向对象会更加适用
         ClassIsWhat();
         ObjectIsWhat();
+        IdentifyClass();
+        RelationshipBetweenClasses();
+
 
 
     }
