@@ -133,7 +133,7 @@ public class FocusPoint_03_JavaDefineClass {
         //           2、一个公有的域访问器方法： public String getName(){};
         //           3、一个公有的域更改器方法： public void modifyName(){};
 
-        // Topic-13: 不要编写返回引用可变对象的访问器方法
+        // Topic-13: 不要编写返回引用可变对象的访问器方法 + 如果需要返回一个可变对象的引用：首先对它进行clone==》return （Date）hireDay.clone();
         //           比如你把Employee类中的  public LocalDate getHireDay(){return hireDay;}
         //           改成 public Date getHireDay(){return hireDay;}
         //           返回值如果是个Date类型==》由于Date对象是可变的==》那就可以调用更改器setTime更改==》可以hiraDay的实例域明确说明是private了==》破坏了封装性
