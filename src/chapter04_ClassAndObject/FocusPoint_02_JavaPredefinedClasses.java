@@ -68,5 +68,4 @@ public class FocusPoint_02_JavaPredefinedClasses {
         // 而无需了解实现的细节：比如LocalDate.plusDays()就可以实现推断多少天后是哪年几月几日；复杂性被封装了起来
     }
 
-    // 
 }
