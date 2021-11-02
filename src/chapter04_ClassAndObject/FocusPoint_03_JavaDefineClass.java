@@ -1,10 +1,10 @@
-package chapter04_ClassAndObject;
+/**
+ * This program tests the Employee class
+ * @version 1.1.0 2021.11.1
+ * @author ragnor.li
+ * */
 
-/*
-* This program tests the Employee class
-* @version 1.1.0 2021.11.1
-* @author ragnor.li
-* */
+package chapter04_ClassAndObject;
 
 import java.time.LocalDate;
 
@@ -199,15 +199,15 @@ public class FocusPoint_03_JavaDefineClass {
 // FocusSubPoint-01-Define：Story:How to Define EmployeeClass？
 class Employee{
     // step-01: field 实例域： 构建对象时必须初始化这样的域 + 必须确保在每一个构造器执行之后这个域的值被设置 + 在之后的操作中不能再对它修改：没有set方法
-    private String name;
+    private final String name;
     private double salary;
-    private LocalDate hireDay;
+    private final LocalDate hireDay;
 
     // step-02: constructor 构造器: 有点java的味道了
     public Employee(String n, double s, int year, int month, int day){
-        name = n;
-        salary = s;
-        hireDay = LocalDate.of(year, month, day);
+        this.name = n;
+        this.salary = s;
+        this.hireDay = LocalDate.of(year, month, day);
     }
 
 
