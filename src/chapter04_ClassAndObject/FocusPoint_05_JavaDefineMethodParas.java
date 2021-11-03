@@ -2,6 +2,8 @@ package chapter04_ClassAndObject;
 
 public class FocusPoint_05_JavaDefineMethodParas {
     public static void main(String[] args) {
+        // core: java中的方法参数
+
         // Topic-01: 程序设计语言中将参数传递给方法有哪些方式？
         //           1、call by value : 按值调用（数据的地址）
         //           2、call by reference : 按引用调用（变量的地址）

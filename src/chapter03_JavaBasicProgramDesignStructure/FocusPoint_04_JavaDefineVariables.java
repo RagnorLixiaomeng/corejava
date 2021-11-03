@@ -3,6 +3,8 @@ package chapter03_JavaBasicProgramDesignStructure;
 public class FocusPoint_04_JavaDefineVariables {
 
     public static void main(String[] args) {
+        // Core: java定义变量
+
         DefineVariable();
         DefineConstant();
 

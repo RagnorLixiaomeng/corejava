@@ -9,6 +9,8 @@ package chapter03_JavaBasicProgramDesignStructure;
 public class FocusPoint_02_JavaThreeAnnotationStyle {
     // FocusSubPoint-001: just use // to annotation your code
     public static void main(String[] args) {
+        // Core: java的三种注释类型
+
         /*FocusSubPoint-002: to annotation your multi-lines code
         * psvm is the Quick input for public static void main(String[] args){}
         * sout is the Quick input for System.out.println()

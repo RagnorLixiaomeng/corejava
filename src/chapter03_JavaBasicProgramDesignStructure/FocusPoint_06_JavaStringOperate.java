@@ -4,6 +4,8 @@ import javax.print.DocFlavor;
 
 public class FocusPoint_06_JavaStringOperate {
     public static void main(String[] args) {
+        // Core: java字符串
+
         // Topic-01: java没有内置的字符串类型，而是在标准java类库中提供一个预定义类，叫做String，每个使用双引号括起来
         //           的字符串都是String类的一个实例
         // Topic-02: 从概念上来讲java字符串就是unicode字符序列

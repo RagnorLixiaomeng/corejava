@@ -5,6 +5,8 @@ import java.math.BigInteger;
 
 public class FocusPoint_09_JavaBigNumericType {
     public static void main(String[] args) {
+        // Core：java中的大数值类型
+
         // Topic-01: 如果基本的整数和浮点数精度不能够满足需求，那么可以使用java.math包中的两个很有用的类： BigInteger 和 BigDecimal
         // Topic-02: 这两个类可以处理任意长度数字序列的数值：BigInteger类实现了任意精度的整数运算；BigDecimal实现了任意精度的浮点数运算。
         BigNumericType();

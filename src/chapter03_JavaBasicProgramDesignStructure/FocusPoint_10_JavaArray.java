@@ -5,6 +5,8 @@ import java.util.*;
 
 public class FocusPoint_10_JavaArray {
     public static void main(String[] args) {
+        // Core: java中的数组
+
         // Topic-01: 数组是一种数据结构==》用来存储同一类型值的集合==》通过一个整型下标可以访问数组中的每一个值
 
 //        DefineArray();

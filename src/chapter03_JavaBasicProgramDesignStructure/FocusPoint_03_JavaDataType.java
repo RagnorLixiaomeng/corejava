@@ -23,6 +23,7 @@ import jdk.swing.interop.SwingInterOpUtils;
  * */
 public class FocusPoint_03_JavaDataType {
     public static void main(String[] args) {
+        // Core: java的三种注释类型
 
         //  Tips-1：because of java want to be run every platform and get the same result,
         //         so each data-type's valueRange must be fixed）

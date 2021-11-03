@@ -6,6 +6,8 @@ import java.util.Random;
 
 public class FocusPoint_05_JavaCalculateSigns {
     public static void main(String[] args) {
+        // Core: java运算符
+
         LearnJavaMath();
         CoversionNumericalDataTypes();
         CombineAssignmentAndOperators();

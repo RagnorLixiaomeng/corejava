@@ -1,16 +1,18 @@
+package chapter04_ClassAndObject;
+
 /**
  * This program tests the Employee class
  * @version 1.1.0 2021.11.1
  * @author ragnor.li
  * */
 
-package chapter04_ClassAndObject;
-
 import java.time.LocalDate;
 
 public class FocusPoint_03_JavaDefineClass {
 
     public static void main(String[] args) {
+        // core: java中用户自定义类
+
         // Topic-01: 截止到目前编写的都是最最最基础简单的类：main方法 + psv类
         // Topic-02: 我们需要学习如何设计复杂应用程序所需要的各种主力类（workhorse class）
         // Topic-03: 通常主力类中是没有main方法的=》但是有自己的实力域与实例方法 =》一个完成的程序包含若干的类 + 1个main入口方法

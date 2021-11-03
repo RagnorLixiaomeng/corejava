@@ -2,6 +2,8 @@ package chapter04_ClassAndObject;
 
 public class FocusPoint_01_JavaFaceObjectProgramming {
     public static void main(String[] args) {
+        // core: java面向对象编程
+
         // Topic-01: 面向对象程序设计 OOP 是当今主流的程序设计范式 ==》 取代了20世纪70年代的"结构化" 过程程序设计开发技术
         // Topic-02: 面向过程开发本质是：算法+数据结构=程序 ==》第一步考虑怎么解决问题也就是算法 + 第二步考虑怎么存储这些数据
         //           所以这一类的程序员必须要：先考虑如何操作数据，然后再决定如何组织数据，以便于数据操作

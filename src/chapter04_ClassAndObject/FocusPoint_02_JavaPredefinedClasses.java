@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class FocusPoint_02_JavaPredefinedClasses {
     public static void main(String[] args) {
+        // core: java使用预定义类
+
         DefineObjectAndObjectVariables();
         UseJavaLocalDateClass();
         MutatorAndAccessor();
