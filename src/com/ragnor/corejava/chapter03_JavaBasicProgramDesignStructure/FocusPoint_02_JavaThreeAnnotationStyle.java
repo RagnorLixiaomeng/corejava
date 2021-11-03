@@ -1,9 +1,9 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 /**
  * FocusSubPoint-003 => document annotation ==> by this can autoGenerate document
  * @version 1.01 2021.10.20
- * @author ragnor.li
+ * @author com.com.ragnor.corejava.com.ragnor.li
  * */
 
 public class FocusPoint_02_JavaThreeAnnotationStyle {

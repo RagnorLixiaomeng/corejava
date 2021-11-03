@@ -1,9 +1,9 @@
-package chapter04_ClassAndObject;
+package com.ragnor.corejava.chapter04_ClassAndObject;
 
 /**
  * This program tests the Employee class
  * @version 1.1.0 2021.11.1
- * @author ragnor.li
+ * @author com.com.ragnor.corejava.com.ragnor.li
  * */
 
 import java.time.LocalDate;
@@ -27,7 +27,7 @@ public class FocusPoint_03_JavaDefineClass {
     public static void DefineAndCallEmployeeClass(){
         // step-01: 创建3个staff对象
         Employee[] staff = new Employee[3];
-        staff[0]=new Employee("ragnor",18000,1994,12,15);
+        staff[0]=new Employee("com/com.ragnor",18000,1994,12,15);
         staff[1]=new Employee("qingning",8000,2000,9,21);
         staff[2]=new Employee("qingqing",10000,1995,11,11);
 
@@ -81,9 +81,9 @@ public class FocusPoint_03_JavaDefineClass {
         // Topic-06: 在构造Employee类的对象的时候，构造器会运行==》将实例域初始化为所希望的状态
 
         System.out.println("Part-02: 构造器");
-        System.out.println("例如：实例化类Employee的时候==> New Employee('ragnor', 40000, 1994, 12, 15 )\n " +
+        System.out.println("例如：实例化类Employee的时候==> New Employee('com.com.ragnor.corejava.com.ragnor', 40000, 1994, 12, 15 )\n " +
                 "将会把实例域设置为：\n" +
-                "name = 'ragnor'\n" +
+                "name = 'com.com.ragnor.corejava.com.ragnor'\n" +
                 "salary = 40000\n" +
                 "hireDay = 15.12.1994");
 
@@ -168,7 +168,7 @@ public class FocusPoint_03_JavaDefineClass {
         *
         * }
         *
-        * if (ragnor.equals(qing){...} ) 调用：这个方法访问了ragnor的name私有域 + qing的name私有域 ==》因为这两个都是Employee类对象
+        * if (com.com.ragnor.corejava.com.ragnor.equals(qing){...} ) 调用：这个方法访问了ragnor的name私有域 + qing的name私有域 ==》因为这两个都是Employee类对象
         *  ==》而 Employee类的方法可以访问Employee类的任何一个对象的私有域
         *
         * */

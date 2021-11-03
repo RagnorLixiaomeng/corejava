@@ -1,6 +1,5 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
-import javax.print.DocFlavor;
 import java.util.*;
 
 public class FocusPoint_10_JavaArray {
@@ -12,7 +11,7 @@ public class FocusPoint_10_JavaArray {
 //        DefineArray();
 //        ForEachLoop();
 //        ArrayCopy();
-//        String[] test_para = {"-g", "ragnor"}; CommandLineParas(test_para);
+//        String[] test_para = {"-g", "com.com.ragnor.corejava.com.ragnor"}; CommandLineParas(test_para);
 //        ArraySort();
 //        MultidimensionalArray();
         IrregularArray();
@@ -102,7 +101,7 @@ public class FocusPoint_10_JavaArray {
             System.out.println(" " + args[i]);
         }
         System.out.println("!");
-        System.out.printf("args 数组中包含 %s", Arrays.toString(args)); // args 数组中包含 [-g, ragnor]
+        System.out.printf("args 数组中包含 %s", Arrays.toString(args)); // args 数组中包含 [-g, com.com.ragnor.corejava.com.ragnor]
     }
 
     // FocusSubPoint-005：What is array sort？

@@ -1,6 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
-
-import javax.print.DocFlavor;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 public class FocusPoint_06_JavaStringOperate {
     public static void main(String[] args) {
@@ -22,7 +20,7 @@ public class FocusPoint_06_JavaStringOperate {
     // FocusSubPoint-001: substring
     public static void SubstringMethod(){
         // Topic-01: String类的substring方法可以从一个较大的字符串提取出一个子串。
-        String myName = "ragnor";
+        String myName = "com/com.ragnor";
         String result_substring = myName.substring(0, 2); // 取头不取尾，好处是便于计算子串长度：2-0=2
         System.out.println(result_substring);
 
@@ -49,7 +47,7 @@ public class FocusPoint_06_JavaStringOperate {
         // Topic-03: 通过拼接"he"和"llo"来创建一个新字符串的效率的确不高。但是不可变字符串最大的优点：编译器可以让字符串共享
         //           java设计者认为共享带来的效率远远胜过于提取、拼接字符串带来的低效率；
         //           这么去理解：想象下将各种字符串存放在公共的存储池中，字符串变量执行存储池中响应的位置。如果复制一个字符串就是复制的引用，本质内存中就只保存一份相同的字符串
-        String unchangedstring_01 = "ragnor";
+        String unchangedstring_01 = "com/com.ragnor";
         // need rognar
         String target_01 = unchangedstring_01.substring(0,1) + "o" +
                 unchangedstring_01.substring(2,4) + "a" +

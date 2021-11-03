@@ -1,6 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
-
-import jdk.swing.interop.SwingInterOpUtils;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 /**
  * 1、Java is a strong-style programming language ==> that means you must statement every variable it's data-type

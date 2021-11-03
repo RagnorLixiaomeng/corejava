@@ -1,4 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 public class FocusPoint_04_JavaDefineVariables {
 

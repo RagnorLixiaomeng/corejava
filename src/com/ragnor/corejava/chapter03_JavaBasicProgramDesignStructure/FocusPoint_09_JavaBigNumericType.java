@@ -1,4 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

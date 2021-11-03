@@ -1,4 +1,4 @@
-package chapter04_ClassAndObject;
+package com.ragnor.corejava.chapter04_ClassAndObject;
 
 public class FocusPoint_05_JavaDefineMethodParas {
     public static void main(String[] args) {

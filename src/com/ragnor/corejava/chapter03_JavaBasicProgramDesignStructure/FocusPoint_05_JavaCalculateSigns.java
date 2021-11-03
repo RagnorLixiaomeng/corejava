@@ -1,6 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
-
-import org.w3c.dom.ls.LSOutput;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 import java.util.Random;
 

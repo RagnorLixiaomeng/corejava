@@ -1,7 +1,5 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
-import javax.swing.*;
-import java.util.Date;
 import java.util.Scanner;
 
 public class FocusPoint_08_JavaControlFlow {
@@ -40,7 +38,7 @@ public class FocusPoint_08_JavaControlFlow {
         Scanner ragnor_input_01 = new Scanner(System.in);
         System.out.println("please input your name:");
         String input_name = ragnor_input_01.nextLine();
-        if (input_name.equals("ragnor")) System.out.println("hello vip ragnor!");
+        if (input_name.equals("com/com.ragnor")) System.out.println("hello vip com.com.ragnor.corejava.com.ragnor!");
 
         // Topic-02: java中如果希望在某个条件为真时，执行多条语句，那就使用块语句： if (condition){statement1; statement2}
         System.out.println("please input your job name:");

@@ -1,4 +1,4 @@
-package chapter03_JavaBasicProgramDesignStructure;
+package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 import java.io.Console;
 import java.io.IOException;
@@ -58,7 +58,7 @@ public class FocusPoint_07_JavaInputOutput {
                 }
 
                 (base) XiaomengdeMacBook-Pro:AutoTeamFuture xiaomengli$ java scanner
-                User name: ragnor
+                User name: com.com.ragnor.corejava.com.ragnor
                 Password:
                 (base) XiaomengdeMacBook-Pro:AutoTeamFuture xiaomengli$
                 */
@@ -133,7 +133,7 @@ public class FocusPoint_07_JavaInputOutput {
         // Topic-01: 如果用一个不存在的文件构造一个Scanner或者用一个不能被创建的文件名构造一个PrintWriter，那么就会发生异常
         //           java编译器认为这些异常比"被零除"异常更严重，所以需要在main方法中用throws字句标记
         // Topic-02:文件的读取
-        Scanner read_file_in = new Scanner(Paths.get("/Users/xiaomengli/Desktop/java全栈/ragnor_java/corejava/Files/hundsun_01_file.txt"), StandardCharsets.UTF_8);
+        Scanner read_file_in = new Scanner(Paths.get("/Users/xiaomengli/Desktop/java全栈/ragnor_java/com.com.com.ragnor.corejava.com.ragnor.corejava/Files/hundsun_01_file.txt"), StandardCharsets.UTF_8);
         System.out.println(read_file_in.nextLine()); // line-01: o32 hundsun system
 
         // Topic-03: 文件的写入
@@ -142,7 +142,7 @@ public class FocusPoint_07_JavaInputOutput {
         write_out_to.flush(); // this will push cache content to local file
         write_out_to.close(); // this will finally put all the cache to the local file
 
-        // Topic-04: corejava 卷1只是要求我们掌握如何读写文本数据的文件，对于更加高级的技术：处理不同字符编码、处理二进制数据、读取目录、写压缩文件在卷2
+        // Topic-04: com.com.com.ragnor.corejava.com.ragnor.corejava 卷1只是要求我们掌握如何读写文本数据的文件，对于更加高级的技术：处理不同字符编码、处理二进制数据、读取目录、写压缩文件在卷2
 
     }
 }

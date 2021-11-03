@@ -1,4 +1,4 @@
-package chapter04_ClassAndObject;
+package com.ragnor.corejava.chapter04_ClassAndObject;
 
 import java.util.Random;
 
@@ -39,7 +39,7 @@ public class FocusPoint_06_JavaConstructObjects {
         // Topic-01: 如果在构造器中没有显式的给域赋予初值，那么就会被自动的赋为默认值：数值为0、布尔值为false、对象引用为null
         //           但是只有缺少程序设计经验的人才会这么做==》如果不明确的对域进行初始化，就会影响程序代码的可读性。
         // 下面这个就没问题：因为实例域中 定义：private String name； + 在构造器中进行初始化： this.name = s;(s为外部传入参数)
-        Employee huayun_staff = new Employee("ragnor", 38000, 1990, 12, 15);
+        Employee huayun_staff = new Employee("com/com.ragnor", 38000, 1990, 12, 15);
         System.out.println(huayun_staff.getName().length());
 
         // 但是如果这样：实例域中 定义：private String name； + 构造器中没有：this.name = s; name就被自动赋值为null(因为是个对象)

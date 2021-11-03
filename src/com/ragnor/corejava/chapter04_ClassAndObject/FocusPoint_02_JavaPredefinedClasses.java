@@ -1,4 +1,4 @@
-package chapter04_ClassAndObject;
+package com.ragnor.corejava.chapter04_ClassAndObject;
 
 import java.time.LocalDate;
 import java.util.Date;
