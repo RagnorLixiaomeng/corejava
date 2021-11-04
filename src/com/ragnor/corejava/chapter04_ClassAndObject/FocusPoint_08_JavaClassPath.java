@@ -31,16 +31,21 @@ public class FocusPoint_08_JavaClassPath {
          *
          *
          * */
+        SetClassPath();
     }
 
 
     // 设置类路径
     public static void SetClassPath(){
-        // Topic-01：设置类的路径推荐两种方式：
-        //          method-01： java -classpath/-cp /home/user/xiaomengli/code:.:/home/user/archivers/jars/Employee.jar myjavaproject
+        System.out.println(" two methods to set class path ");
+        /*  Topic-01：设置类的路径推荐两种方式：
+                  method-01： java -classpath/-cp /home/user/xiaomengli/code:.:/home/user/archivers/jars/Employee.jar myjavaproject
 
-        //          method-02:  export CLASSPATH=/home/user/xiaomengli/code:.:/home/user/archivers/jars/Employee.jar (unix)
-        //                      set CLASSPATH=c:\home\user\xiaomengli\code;.;\home\user\archivers\jars\Employee.jar
+                  method-02:  export CLASSPATH=/home/user/xiaomengli/code:.:/home/user/archivers/jars/Employee.jar (unix)
+                              set CLASSPATH=c:\home\ser\xiaomengli\code;.;\home\ser\archivers\jars\Employee.jar
+                              没想到增地方的"gang u" ==》触发了Error java: 非法的 Unicode转义
+        */
+
     }
 
 }
