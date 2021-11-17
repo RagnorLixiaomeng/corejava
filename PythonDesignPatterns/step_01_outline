@@ -1,0 +1,37 @@
+Python provides support for the list of design patterns that are mentioned below. These design patterns will be used throughout this tutorial −
+
+1、Model View Controller Pattern            MVC模式
+2、Singleton pattern                        单例模式
+3、Factory pattern                          工厂模式
+4、Builder Pattern                          建造者模式
+5、Prototype Pattern                        原型模式
+6、Facade Pattern                           外观模式
+7、Command Pattern                          命令模式
+8、Adapter Pattern                          适配器模式
+9、Decorator Pattern                        装饰器模式
+10、Proxy Pattern                           代理模式
+11、Chain of Responsibility Pattern         责任链模式
+12、Observer Pattern                        观察者模式
+13、State Pattern                           状态模式
+14、Strategy Pattern                        策略模式
+15、Template Pattern                        模板模式
+16、Flyweight Pattern                       享元模式
+17、Abstract Factory Pattern                抽象工厂模式
+18、Object Oriented Pattern                 面向对象模式
+
+
+Benefits of using design pattern
+Following are the different benefits of design pattern −
+1、Patterns provide developer a selection of tried and tested solutions for the specified problems.
+
+2、All design patterns are language neutral.
+
+3、Patterns help to achieve communication and maintain well documentation.
+
+4、It includes a record of accomplishment to reduce any technical risk to the project.
+
+5、Design patterns are highly flexible to use and easy to understand.
+
+
+23 types design parttern summary
+
