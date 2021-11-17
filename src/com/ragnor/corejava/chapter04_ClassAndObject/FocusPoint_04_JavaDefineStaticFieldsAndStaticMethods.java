@@ -7,6 +7,7 @@ public class FocusPoint_04_JavaDefineStaticFieldsAndStaticMethods {
 
         // Topic-01: 我们写了这么多，有没有发现main方法都被标记为static修饰符==》static修饰符的含义是什么？
         //           终于找到了：static ：属于类且不属于类对象的变量和函数
+        //                             In the Java programming language, the keyword static indicates that the particular member belongs to a type itself, rather than to an instance of that type.
         StaticFields();
         StaticConstant();
         StaticMethod();
