@@ -1,9 +1,12 @@
 package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
 /**
- * FocusSubPoint-003 => document annotation ==> by this can autoGenerate document
  * @version 1.01 2021.10.20
- * @author com.com.ragnor.corejava.com.ragnor.li
+ * @author ragnor.li
+ * 【类注释】FocusPoint-02：java的三种注释风格分别是什么？
+ *      FocusSubPoint-001: just use // to annotation your code
+ *      FocusSubPoint-002: to annotation your multi-lines code
+ *      FocusSubPoint-003 - document annotation - by this can autoGenerate document
  * */
 
 public class FocusPoint_02_JavaThreeAnnotationStyle {

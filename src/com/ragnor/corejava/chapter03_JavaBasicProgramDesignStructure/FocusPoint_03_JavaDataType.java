@@ -1,7 +1,7 @@
 package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
 
-/**
- * 1、Java is a strong-style programming language ==> that means you must statement every variable it's data-type
+/** 【类注释】
+ * 1、Java is a strong-style programming language ==* that means you must statement every variable it's data-type
  * 2、Java offer 8 basic data-types:
  *          4 Integer data type (Integer means no Decimal):
  *              byte
