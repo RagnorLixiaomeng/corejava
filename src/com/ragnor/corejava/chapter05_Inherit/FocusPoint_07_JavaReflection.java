@@ -32,14 +32,14 @@ public class FocusPoint_07_JavaReflection {
         ragnorTrackClass rtc = new ragnorTrackClass("RAGNOR", 1800);
         // Topic-01: java中使用Class类专门保存运行时信息
         // Topic-02: Object类中的getClass方法将会返回一个Class类型的实例
-        Class cl_01 = rtc.getClass();
+        Class<?> cl_01 = rtc.getClass();
         // Topic-03: Class类最常用的方法是getName返回类的名字
         System.out.println(cl_01.getName());
 
         // Topic-04:可以调用静态方法forName获得类名对应的Class对象==>Class.forName方法就是一个抛出已检查异常的例子
         String className = "com.ragnor.corejava.chapter05_Inherit.FocusPoint_07_JavaReflection$ragnorTrackClass";
         try{
-            Class cl_02 = Class.forName(className);
+            Class<?> cl_02 = Class.forName(className);
             System.out.println(cl_02.getName());
         }catch (ClassNotFoundException e){
             e.printStackTrace();
@@ -51,7 +51,7 @@ public class FocusPoint_07_JavaReflection {
         private String name;
         private double salary;
 
-        public ragnorTrackClass(){};
+        public ragnorTrackClass(){}
 
         public ragnorTrackClass(String name, double salary){
             this.name = name;
@@ -109,7 +109,7 @@ public class FocusPoint_07_JavaReflection {
         //                              isPublic/isPrivate/isFinal
 
         ragnorTrackClass rtc = new ragnorTrackClass("nu", 1800);
-        Class cl = rtc.getClass();
+        Class<?> cl = rtc.getClass();
         // Topic-01: 获取类的名字
         System.out.println(cl.getName());
         // Topic-02: 获取类的类型
@@ -199,11 +199,11 @@ public class FocusPoint_07_JavaReflection {
     /**利用反射实现 来扩展任意类型的数组，而不只是对象数组*/
     public static Object goodCopyOf(Object old_obj, int newLength){
         // step01: 首选获取 old_obj数组的类对象
-        Class cl = old_obj.getClass();
+        Class<?> cl = old_obj.getClass();
         // step02: 确认它是一个数组
         if (!cl.isArray()) return null; // 这个为null检查真棒
         // step03: 使用Class类的getComponentType方法确定数组对应的类型
-        Class componentType = cl.getComponentType();
+        Class<?> componentType = cl.getComponentType();
         // step04: 获取数组的长度，为什么getComponentType是Class的方法，getLength是Array的方法哈哈，书中时候不知道，反射方法分类有点奇怪
         int length = Array.getLength(old_obj); // java.lang.reflect的Array
         // step05: Array.newInstance返回一个具有给定类型、给定维数的新数组==》核心就是上面那个是Object[] newArray = new Object[newLength];构建的新数组，这里是调用反射的newInstance

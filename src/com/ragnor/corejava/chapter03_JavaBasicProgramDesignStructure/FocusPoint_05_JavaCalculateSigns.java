@@ -11,6 +11,8 @@ public class FocusPoint_05_JavaCalculateSigns {
         CombineAssignmentAndOperators();
         SelfIncreasingAndSelfDecrementOperator();
         RelationalAndBooleanOperator();
+        BitOperator();
+        BracketsAndOperatorLevel();
         enumMethod();
 
     }

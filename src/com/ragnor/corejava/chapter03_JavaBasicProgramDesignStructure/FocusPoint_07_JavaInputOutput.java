@@ -23,7 +23,7 @@ public class FocusPoint_07_JavaInputOutput {
     // FocusSubPoint-001：read input
     public static void ReadInput(){
         // Topic-01: 我们使用sout知道可以打印输出到"标转输出流"==》也就是控制台窗口是一件灰常容易的事情==》System.out.println();
-        // Topic-02: 读取"标准输入流"麻烦一点点 ==》首先需要构造一个Scanner对象 ==》然后与"标准啊输入流"System.in关联==》最后就
+        // Topic-02: 读取"标准输入流"麻烦一点点 ==》首先需要构造一个Scanner对象 ==》然后与"标准啊输入流"System.ein关联==》最后就
         //           可以使用Scanner类的各种方法实现输入操作
 
         Scanner ragnor_in = new Scanner(System.in);

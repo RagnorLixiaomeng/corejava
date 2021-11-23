@@ -110,5 +110,9 @@ public class FocusPoint_03_JavaGenericArray {
         public void update(ArrayList list){
             System.out.println(list.toString());
         }
+
+        public double getSalary() {
+            return salary;
+        }
     }
 }

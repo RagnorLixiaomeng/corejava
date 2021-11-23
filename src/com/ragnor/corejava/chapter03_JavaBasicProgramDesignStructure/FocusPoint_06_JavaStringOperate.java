@@ -42,7 +42,7 @@ public class FocusPoint_06_JavaStringOperate {
     // FocusSubPoint-003: un-changed String
     public static void UnChangedString(){
         // Topic-01: java的String类中没有提供用于修改字符串的方法，所以如果希望将字符串的内容修改：需要提取需要的字符串 + 拼接上替换的字符串
-        // Topic-02: 由于不能修改jva字符串中的字符，所以在java文档中将String类对象成为不可变字符串：如同数字3永远是数字3一样，
+        // Topic-02: 由于不能修改java字符串中的字符，所以在java文档中将String类对象成为不可变字符串：如同数字3永远是数字3一样，
         //           字符串"Hello"永远都包含H e l l o的代码单元序列，而不能修改其中任何一个字符
         // Topic-03: 通过拼接"he"和"llo"来创建一个新字符串的效率的确不高。但是不可变字符串最大的优点：编译器可以让字符串共享
         //           java设计者认为共享带来的效率远远胜过于提取、拼接字符串带来的低效率；

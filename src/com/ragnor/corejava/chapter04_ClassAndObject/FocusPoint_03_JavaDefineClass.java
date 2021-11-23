@@ -1,13 +1,12 @@
 package com.ragnor.corejava.chapter04_ClassAndObject;
 
+import java.time.LocalDate;
+
 /**
  * This program tests the Employee class
  * @version 1.1.0 2021.11.1
  * @author com.com.ragnor.corejava.com.ragnor.li
  * */
-
-import java.time.LocalDate;
-
 public class FocusPoint_03_JavaDefineClass {
 
     public static void main(String[] args) {
@@ -15,7 +14,7 @@ public class FocusPoint_03_JavaDefineClass {
 
         // Topic-01: 截止到目前编写的都是最最最基础简单的类：main方法 + psv类
         // Topic-02: 我们需要学习如何设计复杂应用程序所需要的各种主力类（workhorse class）
-        // Topic-03: 通常主力类中是没有main方法的=》但是有自己的实力域与实例方法 =》一个完成的程序包含若干的类 + 1个main入口方法
+        // Topic-03: 通常主力类中是没有main方法的=》但是有自己的实例域与实例方法 =》一个完整的程序包含若干的类 + 1个main入口方法
 
         DefineAndCallEmployeeClass();
         UseMultipleSourceJavaFiles();
@@ -138,7 +137,7 @@ public class FocusPoint_03_JavaDefineClass {
         // Topic-13: 不要编写返回引用可变对象的访问器方法 + 如果需要返回一个可变对象的引用：首先对它进行clone==》return （Date）hireDay.clone();
         //           比如你把Employee类中的  public LocalDate getHireDay(){return hireDay;}
         //           改成 public Date getHireDay(){return hireDay;}
-        //           返回值如果是个Date类型==》由于Date对象是可变的==》那就可以调用更改器setTime更改==》可以hiraDay的实例域明确说明是private了==》破坏了封装性
+        //           返回值如果是个Date类型==》由于Date对象是可变的==》那就可以调用更改器setTime更改==》可是hiraDay的实例域明确说明是private了==》破坏了封装性
         System.out.println("Part-04: 封装的优点");
         /*
         *  public String getName(){
@@ -179,7 +178,7 @@ public class FocusPoint_03_JavaDefineClass {
         System.out.println("Part-06: 私有方法");
 
         // Topic-17: 第一实例域：就是 构建对象时必须初始化这样的域 + 必须确保在每一个构造器执行之后这个域的值被设置 + 在之后的操作中不能再对它修改：没有set方法
-        // Topic-18: 第二实例域：用final修饰符进行生命：private final string name；
+        // Topic-18: 第二实例域：用final修饰符进行声明：private final string name；
         // Topic-19: 第三final修饰符的应用场景：大都应用于
         //                                          1、基本类型域（primitive）
         //                                          2、不可变类的域（immutable）：如果类中的每个方法都不会改变其对象=》就是不可变类：比如String类
@@ -196,8 +195,6 @@ public class FocusPoint_03_JavaDefineClass {
 
 }
 
-
-
 // FocusSubPoint-01-Define：Story:How to Define EmployeeClass？
 class Employee{
     // step-01: field 实例域： 构建对象时必须初始化这样的域 + 必须确保在每一个构造器执行之后这个域的值被设置 + 在之后的操作中不能再对它修改：没有set方法
@@ -211,7 +208,6 @@ class Employee{
         this.salary = s;
         this.hireDay = LocalDate.of(year, month, day);
     }
-
 
     // step-03: method 方法 ： 4个
     public String getName(){

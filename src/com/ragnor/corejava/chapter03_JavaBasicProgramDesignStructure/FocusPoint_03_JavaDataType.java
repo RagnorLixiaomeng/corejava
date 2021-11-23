@@ -21,7 +21,7 @@ package com.ragnor.corejava.chapter03_JavaBasicProgramDesignStructure;
  * */
 public class FocusPoint_03_JavaDataType {
     public static void main(String[] args) {
-        // Core: java的三种注释类型
+        // Core: java中的基本数据类型
 
         //  Tips-1：because of java want to be run every platform and get the same result,
         //         so each data-type's valueRange must be fixed）
@@ -29,7 +29,6 @@ public class FocusPoint_03_JavaDataType {
         //  Tips-3: ValueRange come from Memory: 1 byte ==> 8 bit ==> 2(0 | 1) 的8次方 ==》分正负（一半一半）故 2 的 7次方 ==》减1是因为有0
         //  Tips-4: java中十六机制：前缀0x / 0X表示 ==》 0xCAFE  ; 八进制 前缀 0  ==》010 就是 8进制的10 也就是10进制的8哈哈
         //  Tips-5: java没有任何 unsigned 类型的byte、short、int、long类型
-
 
         DataCategoryInteger();
         DatatypeFloat();
@@ -157,7 +156,7 @@ public class FocusPoint_03_JavaDataType {
         /* 特殊值-单精度浮点数的最大值
         *
         *
-        *
+        *CombineAssignmentAndOperators
         *
         * IEEE 754浮点数：
         *       1、指数全是1：特殊值
