@@ -11,8 +11,8 @@ import java.util.Date;
 
 public class FocusPoint_02_JavaInterfaceExample {
     public static void main(String[] args) {
-//        InterfaceAndCallback();
-//        JavaComparatorInterface();
+        InterfaceAndCallback();
+        JavaComparatorInterface();
         JavaCloneObject();
 
     }
