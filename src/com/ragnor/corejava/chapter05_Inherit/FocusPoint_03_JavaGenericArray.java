@@ -94,10 +94,10 @@ public class FocusPoint_03_JavaGenericArray {
 
     }
 
-    public static class EmployeeDB{
+    public static class EmployeeDB implements Cloneable{
         private final String name;
         private final int age;
-        private final double salary;
+        private double salary;
         private final LocalDate hireDay;
 
         public EmployeeDB(String name, int age, double salary, int year, int month, int day){
@@ -113,6 +113,15 @@ public class FocusPoint_03_JavaGenericArray {
 
         public double getSalary() {
             return salary;
+        }
+
+        public void raiseSalary(){
+            this.salary += 1000.00;
+        }
+
+        @Override
+        public EmployeeDB clone() throws CloneNotSupportedException {
+            return (EmployeeDB) super.clone();
         }
     }
 }
