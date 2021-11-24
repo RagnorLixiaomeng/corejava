@@ -123,5 +123,9 @@ public class FocusPoint_03_JavaGenericArray {
         public EmployeeDB clone() throws CloneNotSupportedException {
             return (EmployeeDB) super.clone();
         }
+
+        public String getName() {
+            return name;
+        }
     }
 }
