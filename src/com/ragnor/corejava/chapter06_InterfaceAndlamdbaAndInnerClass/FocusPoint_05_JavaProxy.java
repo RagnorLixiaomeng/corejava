@@ -93,6 +93,7 @@ public class FocusPoint_05_JavaProxy {
         System.out.println("java's proxy is a long way to understand");  // todo: java's proxy is a long way to understand"
     }
 
-
 }
+
+
 
