@@ -37,7 +37,6 @@ public class FocusPoint_01_JavaDealWithException {
 
     }
 
-
     // FocusSubPoint-01：What are the exception classifications in java?
     public static void JavaExceptionClassifications(){
         // Topic-01:异常处理的任务就是将控制权从错误产生的地方转移给能够处理这种情况的错误处理器 ==》而为了能够在程序中处理异常情况，必须研究程序中可能会出现的错误和问题
