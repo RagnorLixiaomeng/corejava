@@ -1,5 +1,7 @@
 package com.ragnor.corejava.chapter08_GenericProgramming;
 
+import javax.swing.*;
+
 public class FocusPoint_03_JavaDefineGenericMethod {
     public static void main(String[] args) {
         DefineGenericMethod();
@@ -27,6 +29,18 @@ public class FocusPoint_03_JavaDefineGenericMethod {
         double middle3 = RagnorDefineGenericMethod.getMiddle(3.14, 1729.0, 0.1);
 
         System.out.println(middle + " " + middle2 + " " + middle3);
+
+        // Topic-05: 如果想要知道编译器对一个泛型方法调用最终推断出哪种类型 ==》Peter von der Ahe推荐: 有目的地引入一个错误，研究熊爱武消息即可
+        JButton btn_1 = new JButton();
+//        btn_1 = RagnorDefineGenericMethod.getMiddle("hello", 0, null);
+        // 赋值给JButton是不可能的，所以研究报错
+        //  Error:(35, 52) java: 不兼容的类型: 推断类型不符合上限
+        //    推断: java.lang.Object&java.io.Serializable&java.lang.Comparable<? extends java.lang.Object&java.io.Serializable&java.lang.Comparable<?>>
+        //    上限: javax.swing.JButton,java.lang.Object
+
+        // ==> 推断得知可以将结果赋给 Object、Serializable、Comparable而不能是JButton
+
+
     }
 }
 
