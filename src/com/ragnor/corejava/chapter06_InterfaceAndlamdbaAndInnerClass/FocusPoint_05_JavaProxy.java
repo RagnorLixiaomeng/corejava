@@ -54,7 +54,6 @@ public class FocusPoint_05_JavaProxy {
         System.out.println(proxy.hashCode());
         System.out.println(proxy.toString());
 
-
     }
 
     static class TraceHandle implements InvocationHandler{
@@ -94,6 +93,7 @@ public class FocusPoint_05_JavaProxy {
     }
 
 }
+
 
 
 
