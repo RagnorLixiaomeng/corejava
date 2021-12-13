@@ -6,6 +6,10 @@ public class FocusPoint_01_JavaGenericProgrammingGoods {
     public static void main(String[] args) {
         // Topic-01: java专家组耗时5年的心血结晶:定义规范和测试实现
         // Topic-02: 使用泛型机制编写的程序代码要比哪些杂乱地使用Object变量，然后再进行强制转换的代码具有更好的安全性和可读性
+        // Topic-03: java中的泛型是假泛型
+        //           真泛型：泛型中的类型是真实存在的。
+        //           伪泛型：仅于编译时类型检查，在运行时擦除类型信息。
+
         BenefitsOfJavaGeneric();
         WhoWantTobeGenericProgrammingEngineer();
     }

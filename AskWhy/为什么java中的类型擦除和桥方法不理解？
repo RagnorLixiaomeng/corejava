@@ -1,0 +1,110 @@
+Java中的类型擦除和桥方法(转载）https://juejin.cn/post/6844903696740925447
+
+类型擦除
+Java在语法中虽然存在泛型的概念，但是在虚拟机中却没有泛型的概念，虚拟机中所有的类型都是普通类。无论何时定义一个泛型类型，编译后类型会被都被自动转换成一个相应的原始类型。
+
+比如这个类
+
+public class Parent<T>
+{
+    public void sayHello(T value)
+    {
+        System.out.println("This is Parent Class, value is " + value);
+    }
+}
+
+复制代码
+在编译后就变成了
+
+public class Parent
+{
+    public void sayHello(Object value)
+    {
+        System.out.println("This is Parent Class, value is " + value);
+    }
+}
+复制代码
+对类型变量进行替换的规则有两条：
+
+若为无限定的类型，如<T>，被替换为Object
+
+若为限定类型，如<T extends Comparable & Serializable>，则用第一个限定的类型变量来替换，在这里被替换为Comparable
+
+桥方法
+类型擦除后，就产生了一个奇怪的现象。
+
+假设有一个超类：
+
+public class Parent<T>
+{
+    public void sayHello(T value)
+    {
+        System.out.println("This is Parent Class, value is " + value);
+    }
+}
+复制代码
+以及一个子类：
+
+public class Child extends Parent<String>
+{
+    public void sayHello(String value)
+    {
+        System.out.println("This is Child class, value is " + value);
+    }
+}
+复制代码
+最后有以下测试代码，企图实现多态：
+
+public class MainApp
+{
+    public static void main(String[] args)
+    {
+        Child child = new Child();
+        Parent<String> parent = child;
+
+        parent.sayHello("This is a string");
+    }
+}
+复制代码
+运行的时候，会对Child类的方法表进行搜索，先分析一下Child类的方法表里有哪些东西：
+
+1. sayHello(Object value) : 从类型被擦除后的超类中继承过来
+2. sayHello(String value) : 自己新增的方法，和超类毫无联系
+3. 一些从Object类继承来的方法，这里忽略
+复制代码
+按理来说，这段测试代码应该不能通过编译，因为要实现多态的话，所调用的方法必须在子类中重写，但是在这里Child类并没有重写Parent类中的sayHello(Object value)方法，只是单纯的继承而已，并且新加了一个参数不同的同名方法。
+
+但是结果是可以正常运行。
+
+原因是编译器在Child类中自动生成了一个桥方法：
+
+public void sayHello(Object value)
+{
+    sayHello((String) value);
+}
+复制代码
+可以看出，这个桥方法实际上就是对超类中sayHello(Obejct)的重写。这样做的原因是，当程序员在子类中写下以下这段代码的时候，本意是对超类中的同名方法进行重写，但因为超类发生了类型擦除，所以实际上并没有重写成功，因此加入了桥方法的机制来避免类型擦除与多态发生冲突。
+
+public class Child extends Parent<String>
+{
+    public void sayHello(String value)
+    {
+        System.out.println("This is Child class, value is " + value);
+    }
+}
+
+复制代码
+桥方法并不需要自己手动生成，一切都是编译器自动完成的。
+
+桥方法与Getter
+同样的，如果超类中有getter的话，在使用多态的时候也可能发生冲突。假设有超类被类型擦除后存在这样一个方法：
+
+Obejct getValue()
+复制代码
+然后在子类中，程序员想要重写这个方法，因此新增了一个这样的方法：
+
+String getValue()
+复制代码
+但是正如前面所述，重写并没有起作用，甚至还应该报错，因为在子类中，根据 函数签名=方法名+参数 的原则，从超类继承的方法与新增的方法冲突了。
+
+但实际上这样的代码是可以工作的，原因在于，JVM是用返回值+方法名+参数的方式来计算函数签名的，所以编译器就可以借助这一原则来生成一个桥方法。不过这种计算函数签名的方法仅仅存在于虚拟机中。
