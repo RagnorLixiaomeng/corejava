@@ -4,7 +4,6 @@ import com.ragnor.corejava.chapter05_Inherit.FocusPoint_03_JavaGenericArray;
 
 import javax.lang.model.type.NullType;
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class FocusPoint_05_JavaGenericCodeAndVirtualMachine {
     public static void main(String[] args) {
@@ -184,7 +183,9 @@ class RagnorPair3$ implements  Serializable{
 
 
 // step-02：编译后（类型擦除后）变成
-//      对类型变量进行替换的规则有两条：1、若为无限定的类型，如<T>，被替换为Object 2、若为限定类型，如<T extends Comparable & Serializable>，则用第一个限定的类型变量来替换，在这里被替换为Comparable
+//      对类型变量进行替换的规则有两条：
+//      1、若为无限定的类型，如<T>，被替换为Object
+//      2、若为限定类型，如<T extends Comparable & Serializable>，则用第一个限定的类型变量来替换，在这里被替换为Comparable
 
 //class Parent$
 //{
