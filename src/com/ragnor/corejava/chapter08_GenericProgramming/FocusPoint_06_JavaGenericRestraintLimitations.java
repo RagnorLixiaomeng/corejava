@@ -1,8 +1,5 @@
 package com.ragnor.corejava.chapter08_GenericProgramming;
 
-import java.util.Collection;
-import java.util.Collections;
-
 public class FocusPoint_06_JavaGenericRestraintLimitations {
     public static void main(String[] args) {
         // todo:
